@@ -274,3 +274,4 @@ C:\Users\CASPER\OneDrive\Desktop\16008124011-Feyzanur-Halıcı-WebFinal\CommonIs
 C:\Users\CASPER\OneDrive\Desktop\16008124011-Feyzanur-Halıcı-WebFinal\CommonIssues\obj\Debug\net8.0\CommonIssues.pdb
 C:\Users\CASPER\OneDrive\Desktop\16008124011-Feyzanur-Halıcı-WebFinal\CommonIssues\obj\Debug\net8.0\CommonIssues.genruntimeconfig.cache
 C:\Users\CASPER\OneDrive\Desktop\16008124011-Feyzanur-Halıcı-WebFinal\CommonIssues\obj\Debug\net8.0\ref\CommonIssues.dll
+C:\Users\CASPER\OneDrive\Desktop\16008124011-Feyzanur-Halıcı-WebFinal\CommonIssues\obj\Debug\net8.0\CommonIssues.sourcelink.json
