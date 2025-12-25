@@ -1,0 +1,51 @@
+@model List<CommonIssues.Models.Issue>
+
+<h2>Ortak Sorunlar Listesi</h2>
+<form method="get">
+    <input type="text" name="search" placeholder="Başlığa göre ara..." />
+    <button type="submit">Ara</button>
+</form>
+
+<br />
+
+<table border="1">
+    <tr>
+        <th>Başlık</th>
+        <th>Yer</th>
+        <th>Durum</th>
+        <th>Tarih</th>
+        <th>İşlemler</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Location</td>
+            
+            <td>
+                @if (item.Status == "Açık")
+                {
+                    <span style="color:red">@item.Status</span>
+                }
+                else if (item.Status == "İnceleniyor")
+                {
+                    <span style="color:orange">@item.Status</span>
+                }
+                else
+                {
+                    <span style="color:green">@item.Status</span>
+                }
+            </td>
+            <td>@item.CreatedDate.ToString("dd.MM.yyyy HH:mm")</td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<br />
+<a asp-action="Create">Yeni Sorun Ekle</a>

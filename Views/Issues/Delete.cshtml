@@ -1,0 +1,15 @@
+@model CommonIssues.Models.Issue
+
+<h3>Bu kaydı silmek istediğinize emin misiniz?</h3>
+
+<div>
+    <p><b>Başlık:</b> @Model.Title</p>
+    <p><b>Yer:</b> @Model.Location</p>
+    <p><b>Durum:</b> @Model.Status</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Sil</button>
+    <a asp-action="Index">İptal</a>
+</form>
