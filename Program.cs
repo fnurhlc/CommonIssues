@@ -5,11 +5,11 @@ var builder = WebApplication.CreateBuilder(args); // Uygulama yapılandırması
 
 builder.Services.AddControllersWithViews(); // MVC servisleri
 
-builder.Services.AddDbContext<CommonIssuesContext>(options =>
+/*builder.Services.AddDbContext<CommonIssuesContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     )
-); // Veritabanı bağlantısı
+); // Veritabanı bağlantısı*/
 
 var app = builder.Build(); // Uygulama oluşturulur
 
